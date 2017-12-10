@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Mobile page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="themes/ppk.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <!--page1-->
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>Profile</h1>
+			<a href="#page3" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon"></a>
+			<a href="#page2" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon"></a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <center> <img height="200px" width="200px" src="profil1.jpg"/> </center>
+			<a class="ui-btn ui-icon-user ui-btn-icon-left">Gilang Widianto Aldiansyah</a>
+			<a class="ui-btn ui-icon-calendar ui-btn-icon-left">Kotabumi,01 Agustus 1996</a>
+			<a class="ui-btn ui-icon-phone ui-btn-icon-left">082181809513</a>
+			<a class="ui-btn ui-icon-mail ui-btn-icon-left">GilangWidianto117@gmail.com</a>
+			<a class="ui-btn ui-icon-home ui-btn-icon-left">Jl.Tirtoutomo gg.8 No.4</a>
+			<a class="ui-btn ui-icon-location ui-btn-icon-left">Universitas Brawijaya</a>
+        </div>
+    </div>
+    <!--page2-->
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>Riwayat Pendidikan</h1>
+			<a href="#page1" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon"></a>
+			<a href="#page3" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon"></a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <a class="ui-btn ui-icon-home ui-btn-icon-left">SDN 01 Wonomarto</a>
+			<a class="ui-btn ui-icon-location ui-btn-icon-left">Talang Jali, Kotabumi Utara</a>
+			<center><a class="ui-btn ui-icon-arrow-d ui-btn-icon-notext"></a></center>
+			<a class="ui-btn ui-icon-home ui-btn-icon-left">SMPN 06 Kotabumi</a>
+			<a class="ui-btn ui-icon-location ui-btn-icon-left">Jl. Kom L Yos Sudarso No.22</a>
+			<center><a class="ui-btn ui-icon-arrow-d ui-btn-icon-notext"></a></center>
+			<a class="ui-btn ui-icon-home ui-btn-icon-left">SMAN 02 Kotabumi</a>
+			<a class="ui-btn ui-icon-location ui-btn-icon-left">Sawo Jajar, Kotabumi Utara</a>
+			<center><a class="ui-btn ui-icon-arrow-d ui-btn-icon-notext"></a></center>
+			<a class="ui-btn ui-icon-home ui-btn-icon-left">Universitas Brawijaya</a>
+			<a class="ui-btn ui-icon-location ui-btn-icon-left">Jalan Veteran, Ketawanggede</a>
+        </div>
+        </div>
+     
+    <!--page3-->
+            <div data-role="page" id="page3">
+                <div data-role="header">
+                    <h1>Daftar MataKuliah yang Pernah Di Ambil</h1>
+					<a href="#page2" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon"></a>
+					<a href="#page1" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon"></a>
+                </div>
+                <div data-role="main" class="ui-content">
+                   <form>
+    <input id="filterTable-input" data-type="search">
+</form>
+<table border="1" data-role="table" id="matkulTB" data-filter="true" data-input="#filterTable-input" class="ui-responsive">
+    <thead>
+        <tr>
+            <th data-priority="1">Nama Matkul</th>
+            <th data-priority="persist">Dosen</th>
+            <th data-priority="2">Semester</th>
+            <th data-priority="3">Tahun</th>
+            <th data-priority="4">Nilai</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>PPK</th>
+                <td>Fais Al Huda</td>
+                <td>5</td>
+                <td>2017/2018</td>
+                <td>Semoga A :v</td>
+            </tr>
+            <tr>
+                <th>Pemerogaman Dasar</th>
+                <td><a href="https://filkom.ub.ac.id/info/details/3857135/month" data-rel="external">Indriati</a></td>
+                <td>1</td>
+                <td>2015/2016</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th>Sistem Digital</th>
+                <td><a href="https://filkom.ub.ac.id/info/staff/cae49a0" data-rel="external">Adhitya Bhawiyuga</a></td>
+                <td>1</td>
+                <td>2015/2016</td>
+                <td>A</td>
+            </tr>
+			<tr>
+                <th>IMK</th>
+                <td><a href="https://filkom.ub.ac.id/info/details/97fc158/month" data-rel="external">Randy Cahya Wihandika</a></td>
+                <td>3</td>
+                <td>2016/2017</td>
+                <td>B</td>
+            </tr>
+			<tr>
+                <th>Pemerogama Lanjut</th>
+                <td><a href="https://filkom.ub.ac.id/info/details/70c38cd/month" data-rel="external">Putra Pandu Adikara</a></td>
+                <td>2</td>
+                <td>2015/2016</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+                </div>
+                
+            </div>
+			
+	<script>
+$(document).on('swipeleft', '.ui-page', function(event){    
+    if(event.handled !== true)
+    {    
+        var nextpage = $.mobile.activePage.next('[data-role="page"]');
+        if (nextpage.length > 0) {
+            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+        }
+		else{
+			$.mobile.changePage( "#page1",{transition: "slide", reverse: false}, true, true);
+		}
+        event.handled = true;
+    }
+    return false;         
+});
+
+$(document).on('swiperight', '.ui-page', function(event){     
+    if(event.handled !== true) 
+    {      
+        var prevpage = $(this).prev('[data-role="page"]');
+        if (prevpage.length > 0) {
+            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+        }
+		else{
+			$.mobile.changePage( "#page3",{transition: "slide", reverse: true}, true, true);
+		}
+        event.handled = true;
+    }
+    return false;            
+});
+</script>
+</body>
+
+</html>
